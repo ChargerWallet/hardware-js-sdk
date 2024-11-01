@@ -1,0 +1,31 @@
+{
+  "name": "@chargerwallet/hd-transport-http",
+  "version": "1.0.12-alpha.2",
+  "description": "hardware http transport",
+  "author": "Lyfeloop",
+  "homepage": "https://github.com/Chargerwallet/hardware-js-sdk#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chargerwallet/hardware-js-sdk.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "rimraf dist && rollup -c ../../build/rollup.config.js -w",
+    "build": "rimraf dist && rollup -c ../../build/rollup.config.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "bugs": {
+    "url": "https://github.com/Chargerwallet/hardware-js-sdk/issues"
+  },
+  "dependencies": {
+    "@chargerwallet/hd-shared": "^1.0.12-alpha.2",
+    "@chargerwallet/hd-transport": "^1.0.12-alpha.2",
+    "axios": "^0.27.2"
+  }
+}

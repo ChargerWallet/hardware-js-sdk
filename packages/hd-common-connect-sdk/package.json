@@ -1,0 +1,29 @@
+{
+  "name": "@chargerwallet/hd-common-connect-sdk",
+  "version": "1.0.12-alpha.2",
+  "author": "Lyfeloop",
+  "homepage": "https://github.com/Chargerwallet/hardware-js-sdk#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chargerwallet/hardware-js-sdk.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "rimraf dist && rollup -c ../../build/rollup.config.js -w",
+    "build": "rimraf dist && rollup -c ../../build/rollup.config.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@chargerwallet/hd-core": "^1.0.12-alpha.2",
+    "@chargerwallet/hd-shared": "^1.0.12-alpha.2",
+    "@chargerwallet/hd-transport-http": "^1.0.12-alpha.2",
+    "@chargerwallet/hd-transport-lowlevel": "^1.0.12-alpha.2",
+    "@chargerwallet/hd-transport-webusb": "^1.0.12-alpha.2"
+  }
+}
